@@ -1,3 +1,118 @@
+*{
+  border: 1px solid red;
+}
+
 body {
   background: peachpuff;
+  text-align: center;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: flex-start;
+}
+
+header{
+  height: 20vh;
+  margin: .5em;
+}
+
+
+aside section{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 40vh;
+}
+
+/*.one{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  
+}*/
+
+footer{
+  height: 40vh;
+  margin: 1em;
+}
+
+.a{
+  background-color: green;
+}
+
+.b{
+  background-color: aqua;
+  width: 25%;
+  margin: .5em;
+}
+
+.c{
+  background-color: blueviolet;
+  width: 25%;
+  margin: .5em;
+}
+
+.d{
+  background-color: brown;
+  width: 25%;
+  margin: .5em;
+}
+
+.e{
+  background-color: darkorange;
+  width: 25%;
+  margin: .5em;
+}
+
+.f{
+  background-color: chartreuse;
+  width: 25%;
+  margin: .5em;
+}
+
+.g{
+  background-color: yellow;
+  width: 25%;
+  margin: .5em;
+}
+
+.h{
+  background-color: darkslategray;
+  margin: .5em;
+}
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+  }
+  header{
+    width: 100%;
+    height: 30vh;
+  }
+
+  aside{
+    flex-basis: 75%;
+    flex: 1;
+    
+  }
+
+  aside section{
+    display: flex;
+    justify-content: space-between;
+    height: 50vh; 
+  }
+  
+  footer{
+    width: 20%;
+    height: 50vh;
+    
+  }
 }
